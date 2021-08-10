@@ -1,6 +1,7 @@
 import streamlit as st 
 import pytesseract 
 from PIL import Image 
+pytesseract.pytesseract.tesseract_cmd='/app/.apt/usr/bin/tesseract' 
 st.title("OCR-optical character recognition") 
 img=st.file_uploader("choose an image") 
 if image is not None: 
